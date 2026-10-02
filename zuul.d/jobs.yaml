@@ -24,6 +24,7 @@
       rebuilds, and add related required projects.
     timeout: 7200
     nodeset: s2i-openstack-containers-image-builder
+    semaphores: s2i-builder
     required-projects:
       - github.com/openstack-k8s-operators/s2i-openstack-containers
       - opendev.org/zuul/zuul-jobs
