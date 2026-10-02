@@ -215,6 +215,10 @@
         tempest.api.volume.test_volumes_list.VolumesListTestJSON.test_volume_list
         tempest.scenario.test_server_basic_ops.TestServerBasicOps.test_server_basic_ops
         heat_tempest_plugin.tests.functional.test_stack_tags.StackTagTest
+        ironic_tempest_plugin.tests.api.admin.test_nodes.TestNodes
+        ironic_tempest_plugin.tests.api.admin.test_conductor.TestConductors
+      cifmw_test_operator_tempest_exclude_list: |
+        ironic_tempest_plugin.tests.api.admin.test_nodes.TestNodesVif
 
 - job:
     name: s2i-openstack-container-consumer-smoke
